@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculo sálarial.</title>
+</head>
+<body>
+    
+<script>
+    // Excesso: ex
+    //Salário real
+    //Resto da subtração com o excesso
+    //ins= 3%
+    //Taxa= 10%
+    //Parcela fixa= pf
+    var nome = prompt("Digite o seu nome: ");
+    var sa = prompt("Digite o seu sálario Bruto Sr/a: "+nome);
+
+    if (sa <=70000) {
+      var ins=(sa * 3)/100;   
+      var sr = sa - ins;
+      document.write(" <h1>Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3>Salário Digitado:"+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3>Desconto da Segurança Social:"+ins,"Kz.</h3>");
+      document.write("<hr>"); 
+      document.write("<h3>Sr/a: ", nome,":</h3>");
+      document.write("<hr>");
+      document.write("<h3>O seu salário a receber é de:",sr,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3>O.b.s: Valores abaixo ou igual a 70.000kz não sofrem descontos IRT, Apénas segurança social.</h3>");
+      document.write("<hr>");
+      document.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+        
+    }
+
+    
+else{
+    // 2-Escalão
+
+     if (sa >=70001 && sa <=100000) {
+    var ins=(sa * 3)/100;
+       var ex = 70000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 3000;
+      var irt = (res * 10)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome," </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    // 3-Escalão
+   else if (sa >=100001 && sa <=150000) {
+    var ins=(sa * 3)/100;
+       var ex = 100000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 6000;
+      var irt = (res * 13)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    // 4-Escalão
+   else if (sa >=150001 && sa <=200000) {
+    var ins=(sa * 3)/100;
+       var ex = 150000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 12250;
+      var irt = (res * 16)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+    // 5-Escalão 
+    else if (sa >=200001 && sa <=300000) {
+    var ins=(sa * 3)/100;
+       var ex = 200000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 31250;
+      var irt = (res * 18)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+       ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    // 6-Escalão
+    else if (sa >=300001 && sa <=500000) {
+    var ins=(sa * 3)/100;
+       var ex = 300000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 49250;
+      var irt = (res * 19)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    // 7-Escalão
+     else if (sa >=500001 && sa <=1000000) {
+    var ins=(sa * 3)/100;
+       var ex = 500000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 87250;
+      var irt = (res * 20)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    // 8-Escalão
+     else if (sa >=1000001 && sa <=1500000) {
+    var ins=(sa * 3)/100;
+       var ex = 1000000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 187250;
+      var irt = (res * 21)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    // 9-Escalão
+
+     else if (sa >=1500001&& sa <=2000000) {
+    var ins=(sa * 3)/100;
+       var ex = 1500000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 292250;
+      var irt = (res * 22)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    //10-Escalão 
+    else if (sa >=2000001 && sa <=2500000) {
+    var ins=(sa * 3)/100;
+       var ex = 2000000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 402250;
+      var irt = (res * 23)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+       ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    // 11-Escalão
+    else if (sa >=2500001 && sa <=5000000) {
+    var ins=(sa * 3)/100;
+       var ex = 2500000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 517250;
+      var irt = (res * 24)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    // 12-escalão
+     else if (sa >=5000001 && sa <=10000000) {
+    var ins=(sa * 3)/100;
+       var ex = 5000000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 1117250;
+      var irt = (res * 24.5)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...</h3>");
+      document.write("<hr>");
+    }
+
+    // 13-Escalão
+
+     else if (sa <=10000001) {
+    var ins=(sa * 3)/100;
+       var ex = 10000000;    
+      var sr = sa - ins;
+      var res = sr - ex;
+      var pf = 2342250;
+      var irt = (res * 25)/100 + (pf);
+      var sl = (sa-ins-irt);
+      document.write(" <h1> Desconto Salárial</h1>");
+      document.write("<hr>");
+      document.write("<h3> Salário Digitado: "+sa,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto da Segurança Social: "+ins,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Desconto de Imposto sobre o Rendimento de Trabalho: "+irt,"Kz.</h3>");
+      document.write("<hr>");
+      document.write("<h3> Sr/a: ",nome,": </h3>");
+      document.write("<hr>");
+      document.write("<hr>");
+      document.write("<h3> O seu Salário apôs o desconto da Segurança social é de: "+sr,"Kz.</h3>");
+      document.write("<hr>");
+     document.write("<h3> Apôs os descontos INS e IRT devera receber um salário de: "+sl,"Kz.</h3>");
+     document.write("<hr>");
+     document.write("<h3> Seja Justo e pague os seus Impostos o País Agradeci...</h3>");
+     document.write("<hr>");
+     ducument.write("<h3>Seja Justo e pague os seus Impostos o País Agradeci. Juntos somos mais Fortes,Juntos vamos mais longe...h3>");
+      document.write("<hr>");
+    }
+
+
+}
+
+    </script>
+    
+    <script src="java.js"></script>
+    
+</body>
+</html>

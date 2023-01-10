@@ -1,0 +1,141 @@
+h1{
+    text-align: center;
+    color:dodgerblue;
+    background-color: whitesmoke;
+}
+
+h2{
+    color: dodgerblue;
+    
+}
+
+.area2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+padding-right: 35px;
+padding-left: 35px;
+background-color: whitesmoke;
+color: white;
+border-radius: 5px;
+text-align: center;
+color: dodgerblue;
+}
+
+h3{
+    color: black;
+    text-align: center;
+}
+
+
+.sub-t{
+    font-size: 3.5rem;
+    text-align: center;
+    color: dodgerblue;
+    border-radius: 5rem;
+    background-color: whitesmoke;
+    color: dodgerblue;
+}
+.navbar-nav{
+
+    text-align: center;
+}
+
+:root{
+    --tipo-letra: "nunito", Helvetica, arial, sans-sarif;
+    --verde-escur: whitesmoke;
+    --verde-claro: dodgerblue;
+    
+    --rosa-claro: whitesmoke;
+    
+    --preto: dodgerblue;
+}
+
+
+.planos_corpo{
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.planos{
+    background-color: var(--rosa-claro);
+}
+
+.plano{
+    width: 290px;
+    margin: 10px;
+    border: 1px solid var(--verde-claro);
+}
+
+.plano__titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.plano__preco{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plano__preco sup{
+     font-size: 1.5rem;
+     top: -20px;
+}
+
+.plano_divisor {
+    background-color: var(--verde-claro);
+    width: 20px;
+    margin: 5px auto;
+}
+
+.plano-lista{
+    max-width: 195px;
+    margin: 0 auto;
+}
+
+.plano-lista__item{
+    margin: 10px 0;
+    font-family: italic;
+}
+
+
+/*Insira algo antes do conteúdo de 
+    cada elemento.*/
+
+.plano-lista__item::before{    
+    content: "";
+    display: flex;
+    width: 5px;
+    height: 5px;
+    background-color: var(--verde-claro);
+    border-radius: 5px;
+    margin-left: -15px;
+}
+
+.plano__btn-comprar{
+    display: block;
+    max-width: 180px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid var(--verde-claro);
+}
+
+/*: last-child Seleciona todos os elementos que é o último filho do seu 
+    elemento pai.*/ 
+
+.plano:last-child{   
+    background-color: var(--verde-claro);
+}
