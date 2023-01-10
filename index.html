@@ -5,17 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="index.css">
-    <link real="styleshheet" href="java.js">
-    <title>Bernardino-Discontos Reais</title>
+    <title>Bernardino-Chocolife</title>
 </head>
 <body>
-    <h1>DISCONTOS REAIS</h1>
-
     <!-- Nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-ligth bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#">Chocolife</a>
             <!-- Hamburger menu-->
             <button 
             class="navbar-toggler" type="button"
@@ -26,21 +22,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarsupportedcontent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Calcúlos Utilizados</a>
+                        <a class="nav-link" href="#">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contactos</a>
                     </li>
                 </ul>
+                <button class="btn btn-dark" type="submit">Compar</button>
             </div> 
         </div>
     </nav>
-
     <!-- Carousel slides-->
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -51,25 +49,31 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <h2> Trabalhe com Dedicação</h2>
-                    <p class="lead">A dedicação é o intervalo entre o seu objetivo e a sua glória. Os resultados do treino não serão imediatos, mas com dedicação serão evidentes.</p>
-                <img src="img/Baixados 1.jpg" class="d-block w-100" alt="imagem">
+                <h1>Alegria</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur quis deserunt beatae?</p>
+                <img src="img/carousel-1.jpg" class="d-block w-100" alt="imagem">
                 <div class="carousel-caption d-none d-mb-block">
-                    </div>
+                    <h1>Alegria</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur quis deserunt beatae?</p>
+                </div>
                 </div>
                 <div class="carousel-item">
-                    <h2> Conheça mais sobre discontos em Angola</h2>
-                    <p class="lead">Uma das grandes dúvidas de quem é funcionário e está sujeito ao desconto da segurança social é de saber quanto é descontado do seu salário base referente a segurança social. Porém, a partir de agora isso não será mais um problema, abaixo você aprenderá como calcular o INSS em Angola</p> 
-                    <img src="img/emagem 2.2.png" class="d-block w-100" alt="imagem">
+                    <h1>Encomendas Especiais</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur quis deserunt beatae?</p> 
+                    <img src="img/carousel-2.JPG" class="d-block w-100" alt="imagem">
                   <div class="carousel-caption d-none d-mb-block">
-                    </div>
+                    <h1>Encomendas Especiais</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur quis deserunt beatae?</p>
+                 </div>
                 </div>
              <div class="carousel-item">
-                <h2> Receber de forma justa.</h2>
-                    <p class="lead">O que vai determinar a questão aqui é quem deixou de cumprir com sua obrigação no contrato de trabalho. E é isso, Receber de forma justa é uma autorização legal que devi ser cumprida. </p>
-                <img src="img/Emagem 3.3.png" class="d-block w-100" alt="imagem">
+                <h1>Os mais pequenos</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur quis deserunt beatae?</p>
+                <img src="img/carousel-3.JPG" class="d-block w-100" alt="imagem">
                 <div class="carousel-caption d-none d-mb-block">
-                    </div>
+                    <h1>Os mais pequenos</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur quis deserunt beatae?</p>
+                </div>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -81,194 +85,114 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <br>
-    <br>
-    <hr>
-    <div class="sub-t">Tabela de Escalões</div>
-    <section class="planos" id="planos">
-        <h2 class="sessao_titulo"></h2>
-        <div class="planos_corpo">
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">2ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>70 001,00</sup>100 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
+    <!-- Texto descritivo-->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="text-center col-md-4">
+                <h1 class="display-4">Chocolife</h1>
+                <p class="lead"><b><i>Sinta a Douçura da vida</i></b></p>
             </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">3ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>100 001,00</sup>á 150 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">4ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>150 001,00</sup>á 200 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">5ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>200 001,00</sup>á 300 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">6ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>300 001,00</sup>á 500 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">7ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>500 001,00</sup>á 1 000 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">8ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>1 000 001,00</sup>á 1 500 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">9ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>1 500 001,00</sup>á 2 000 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">10ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>2 000 001,00</sup>á 2 500 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">11ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>2 500 001,00</sup>á 5 000 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">12ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup>5 000 001,00</sup>á 10 000 000,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-
-            <div class="plano basico">
-                <h2 class="plano__titulo">13ºEscalão</h2>
-                <br>
-                <span class="plano__preco"><sup></sup> 10 000 001,00</span>
-                <hr class="plano__divisor">
-                <ul class="plano-lista">
-                    <li class="plano-lista__item">A)Subtrair o sálario alferido com os 3% de Ins(segurança social)</li>
-                    <li class="plano-lista__item">B)subtrair o valor encontrado acima, com o valor do Excesso</li>
-                    <li class="plano-lista__item">c)por fim multiplicar o valor acima encontrado com a Táxa e somar com a parcela fixa séra igual ão seu disconto Irt.</li>
-                    <li class="plano-lista__item">O.b.s: Os valores do excesso, da Táxa e da parcela fixa encontra-se na tabela Abaixo.</li>
-                </ul>
-                <a href="index2.html" target="_blank" class="plano__btn-comprar">Calcular</a>
-            </div>
-            
+            <p class="text-justify col-mb-8">
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Aut corruption, obcaecati facilis reiciendis quisquam
+                enim corporis, perspiciatis magni dicta eum a autem maxime aliquam blanditiis
+                qui neque tempore similique dolore.
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit, Aut corrupti, obcaecati facilis reiciendis quisquam 
+                enim corporis, perspiciatis magni dicta eum a autem maxime aliquam blanditiis
+                qui neque tempore similique dolore.
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Aut corrupti.
+            <a href="perfil.html">Mais...</a></p>
         </div>
-    </section>
+    </div>
+    <!-- Card -->
+    <div class="container mt-5">
+    <h1 class="text-center display-4">Productos</h1>
+    <div class="row justify-content-sm-center">
+        <div class="col-sm-6 col-md-4">
+            <div class="card mb-5"> 
+              <img class="card-img-top" src="img/card/1.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Mars Mini</h4>
+                    <h6 class="card-subtitle text-muted mb-2">Mini</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Preço: 10kz</li>
+                    <li class="list-group-item">Percentagem de Açucar: 75%</li>
+                </ul>
+                <div class="card-body">
+                    <a href="productos.html" class="card-link">Mais...</a>
+                </div>
+                <div class="card-footer text-muted">
+                    Chocolife: Sinta a Douçura da Vida
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="card mb-5">
+                <img class="card-img-top" src="img/card/2.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Pacimo de Frutas</h4>
+                    <h6 class="card-subtitle text-muted mb-2">Pacimo</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Preço: 50kz</li>
+                    <li class="list-group-item">Percentagem de Açucar: 50%</li>
+                </ul>
+                <div class="card-body">
+                    <a href="productos.html" class="card link">Mais...</a>
+                </div>
+                <div class="card-footer text-muted">
+                    Chocolife: Sinta a Douçura da Vida
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="card mb-5">
+                <img class="card-img-top" src="img/card/3.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Pacimo Torem</h4>
+                    <h6 class="card-subtitle text-muted mb-2">Pacimo</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Preço: 50kz</li>
+                    <li class="list-group-item">Percentagem de Açucar: 64%</li>
+                </ul>
+                    <div class="card-body">
+                        <a href="productos.html" class="card-link">Mais...</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Chocolife: Sinta a Douçura da Vida
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
     <br>
-    <br>
-    <img src="img/Tabela do irt.jpeg" alt="#">
-    <hr>
+    <!-- Cuide de sua Higiene -->
+    <div class="container">
+        <div class="row justify-content-sm-center">
+             <div class="col-sm-9">
+                <h1 class="display-4">Cuide de Sua Higiene Dentaria</h1>
+                <p class="text-justify">Higiene dentaria é fundamental para previnir o desenvolvimento
+                    de cáries e de doenças nas gengivas. o seu objectivo é muito concreto: eliminar, com certa
+                    frequência, a placa dentaria em continua formação. este objectivo alcança-se basicamente com
+                    a regular escovagem dos dentes, devidamente complementada com o uso do fio dental.
+                    <a href="dicas.html">Mais...</a></p>
+             </div>
+             <div class="col-sm-3">
+                <img src="img/chocosmile.jpg" alt="">
+             </div>
+        </div>
+    </div>
+    <!-- Footer -->
     <footer class="container">
         <div class="row justify-content-center">
             <div class="col-12 mb-3"><hr></div>
 
             <div class="col-sm-4">
-                <h4 class="text-center">Visitenos no:</h4>
+                <h4 class="text-center">social</h4>
                 <div class="btn-group-vertical btn-block w-100" role="group">
                     <a href="#" class="btn btn-outline-primary">Facebook</a>
                     <a href="#" class="btn btn-outline-info">Twitter</a>
@@ -279,13 +203,12 @@
             <div class="col-12 mt-3">
                 <blockquote class="blockquote text-center">
                     <p>Todos os Direitos Reservados</p>
-                    <div class="blockquote-footer">Copyright-2022 <cite title="Titulo">Discontos Reais</cite></div>
+                    <div class="blockquote-footer">Copyright-2022 <cite title="Titulo">Chocolife</cite></div>
                 </blockquote>
             </div>
         </div>
     </footer>
-    
-    
+
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
